@@ -35,3 +35,46 @@ document.getElementById("button2").onclick=function(){
 
 
 } */
+
+const countbtn=document.getElementById("count");
+const increase=document.getElementById("increase");
+const decrease=document.getElementById("decrease");
+const reset=document.getElementById("reset");
+let count=0;
+
+increase.onclick=function(){
+    count++;
+    countbtn.textContent=count;
+    
+}
+
+decrease.onclick=function(){
+    count--;
+    countbtn.textContent=count;
+    
+}
+
+reset.onclick=function(){
+    count=0;
+    countbtn.textContent=count;
+    
+}
+
+//math=build in object that provides mathematical operations
+
+let x=8;
+let y=-30;
+let z=2;
+
+let min=Math.min(x,y,z);
+let max=Math.max(x,y,z);
+let power=Math.pow(x,z);
+let sqt=Math.sqrt(x);
+let flor=Math.floor(y);
+let upper=Math.ceil(y);
+let round=Math.round(y);
+let trunc=Math.trunc(y);
+let log=Math.log(y);
+let abs=Math.abs(y);
+
+console.log(abs);
