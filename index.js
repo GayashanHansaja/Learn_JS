@@ -62,7 +62,7 @@ reset.onclick=function(){
 
 //math=build in object that provides mathematical operations
 
-let x=8;
+/* let x=8;
 let y=-30;
 let z=2;
 
@@ -77,4 +77,28 @@ let trunc=Math.trunc(y);
 let log=Math.log(y);
 let abs=Math.abs(y);
 
-console.log(abs);
+console.log(abs); */
+
+//Randoim number gnertor
+
+let min=1;
+let max=6;
+
+let button=document.getElementById("roll");
+let label1=document.getElementById("Rnumber1");
+let label2=document.getElementById("Rnumber2");
+let label3=document.getElementById("Rnumber3");
+
+let random1
+let random2
+let random3
+button.onclick=function(){
+    random1=Math.floor(Math.random()*max)+min;
+    random2=Math.floor(Math.random()*max)+min;
+    random3=Math.floor(Math.random()*max)+min;
+
+    label1.textContent=random1;
+    label2.textContent=random2;
+    label3.textContent=random3;
+}
+
