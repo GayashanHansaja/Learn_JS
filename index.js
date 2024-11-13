@@ -102,3 +102,30 @@ button.onclick=function(){
     label3.textContent=random3;
 }
 
+//if statements
+
+let age=document.getElementById("age");
+let button2=document.getElementById("agebutton");
+let result=document.getElementById("result");
+let age1;
+
+button2.onclick=function(){
+    age1=age.value;
+    age1=Number(age1);
+
+    if(age1>=50){
+        result.textContent=`you are old`;
+    }
+    else if(age1 == 0){
+        result.textContent=`you just born`;
+    }
+    else if(age1>=18){
+        result.textContent=`you are able`;
+
+    }
+    else{
+        result.textcontent=`you must be 18+`;
+    }
+
+
+}
