@@ -166,7 +166,7 @@ button3.onclick=function(){
 }
 
 /* ternary operator */
-let q=10;
+/* let q=10;
 
 let number=q>=10 ? "greater than 10" : "les than 10";
 
@@ -175,4 +175,38 @@ console.log(number);
 
 let time=10;
 let greeting=time>=12 ?"good afternoon":"good morning";
-console.log(greeting);
+console.log(greeting); */
+
+//Switch statement
+
+let marks=90;
+
+switch(true){
+    case marks>=90:
+        console.log("A+");
+        break;
+
+    case marks>=75:
+        console.log("A");
+        break;
+    
+    case marks>=55:
+        console.log("B");
+        break;
+    
+    case marks>=45:
+        console.log("C");
+        break; 
+    
+    case marks>=35:
+        console.log("D");
+        break;
+
+    case marks<35:
+        console.log("Fail");
+        break;
+    default:
+        console.log("Invalid marks");
+        break;
+
+}
