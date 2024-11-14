@@ -129,3 +129,38 @@ button2.onclick=function(){
 
 
 }
+
+//checked property
+
+let checkbox=document.getElementById("check");
+let visa=document.getElementById("radio1");
+let master=document.getElementById("radio2");
+let paypal=document.getElementById("radio3");
+let button3=document.getElementById("chckbtn");
+let result2=document.getElementById("checkStatus");
+let result3=document.getElementById("cardtype");
+
+button3.onclick=function(){
+    if(checkbox.checked){
+        result2.textContent=`You have subscribed`;
+    }
+    else{
+        result2.textContent="You have not subscribed";
+    }
+
+    if(visa.checked){
+
+        result3.textContent="You have selected Visa";
+    }
+    else if(master.checked){
+        result3.textContent="You have selected Master";
+    }
+
+    else if(paypal.checked){
+        result3.textContent="You have selected Paypal";
+    }
+
+    else {
+        result3.textContent="You have not selected any card";
+    }
+}
