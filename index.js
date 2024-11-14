@@ -164,3 +164,15 @@ button3.onclick=function(){
         result3.textContent="You have not selected any card";
     }
 }
+
+/* ternary operator */
+let q=10;
+
+let number=q>=10 ? "greater than 10" : "les than 10";
+
+console.log(number);
+
+
+let time=10;
+let greeting=time>=12 ?"good afternoon":"good morning";
+console.log(greeting);
