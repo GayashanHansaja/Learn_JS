@@ -179,7 +179,7 @@ console.log(greeting); */
 
 //Switch statement
 
-let marks=90;
+/* let marks=90;
 
 switch(true){
     case marks>=90:
@@ -209,4 +209,23 @@ switch(true){
         console.log("Invalid marks");
         break;
 
-}
+} */
+
+//String Methods
+
+let name="Gayashan";
+
+console.log(name.charAt(0));
+console.log(name.indexOf("y"));
+console.log(name.length);
+console.log(name.trim());
+console.log(name.toUpperCase());
+console.log(name.repeat(3));
+console.log(name.startsWith("n"));//check using if else
+console.log(name.endsWith("n"));//check 
+
+let number="080-346-0986975";
+
+console.log(number.replaceAll("-","*"));
+console.log(number.padStart(20,"*"));
+console.log(number.padEnd(20,"*"));
