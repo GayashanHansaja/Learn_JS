@@ -212,7 +212,7 @@ switch(true){
 } */
 
 //String Methods
-
+/* 
 let name="Gayashan";
 
 console.log(name.charAt(0));
@@ -228,4 +228,73 @@ let number="080-346-0986975";
 
 console.log(number.replaceAll("-","*"));
 console.log(number.padStart(20,"*"));
-console.log(number.padEnd(20,"*"));
+console.log(number.padEnd(20,"*")); */
+
+//string slicing
+
+/* const full_name="gayashan hansaja";
+
+let firstname=full_name.slice(0,full_name.indexOf(" "));
+let lastname=full_name.slice(full_name.indexOf(" ")+1)
+
+console.log(firstname)
+console.log(lastname) */
+
+//Method chaining
+//no chain
+let user=window.prompt("Enter your name");
+
+/* user=user.trim();
+let letter=user.charAt(0);
+letter=letter.toUpperCase();
+
+
+let others=user.slice(1);
+others=others.toLowerCase();
+
+user=letter+others;
+
+console.log(user); */
+//with chain
+
+/* user=user.trim().charAt(0).toUpperCase()+user.slice(1).toLowerCase();
+console.log(user); */
+
+//assignment opereator
+
+/* = just assignment
+== compare if  value are equal
+=== compare if values and types are equal
+
+!= not equal
+!== not equal in value and type */
+
+//for loop
+// want to skip certain steps  use continue
+
+//spread operator
+/* 
+let numbers=[1,2,3,4,5,6];
+console.log(numbers);//NaN
+console.log(...numbers);//1 2 3 4 5 6
+
+let name="gayashan";
+console.log(...name);//g a y a s h a n
+
+let fruits = ["apple", "orange", "banana"];
+let vegetables = ["carrots", "celery", "potatoes"];
+let foods = [...fruits, ...vegetables, "eggs", "milk"];
+
+console.log(foods); */
+
+//rest parameter
+const food1="apple";
+const food2="orange";
+const food3="banana";
+const food4="carrot";
+
+function food(...food){
+    return food;
+}
+
+console.log(food(food1,food2,food3,food4));
