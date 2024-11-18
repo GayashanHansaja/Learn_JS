@@ -242,7 +242,7 @@ console.log(lastname) */
 
 //Method chaining
 //no chain
-let user=window.prompt("Enter your name");
+/* let user=window.prompt("Enter your name"); */
 
 /* user=user.trim();
 let letter=user.charAt(0);
@@ -288,7 +288,7 @@ let foods = [...fruits, ...vegetables, "eggs", "milk"];
 console.log(foods); */
 
 //rest parameter
-const food1="apple";
+/* const food1="apple";
 const food2="orange";
 const food3="banana";
 const food4="carrot";
@@ -297,4 +297,52 @@ function food(...food){
     return food;
 }
 
-console.log(food(food1,food2,food3,food4));
+console.log(food(food1,food2,food3,food4)); */
+
+//call back function
+
+/* calculate(6,7,display);
+function calculate(x,y,displayres){
+    let result=x+y ;
+    console.log("hellko")
+    displayres(result);
+}
+
+function display(par){
+    console.log(par);
+} */
+
+//for each methods
+/* let fruits=["apple","banana","orange","grape"];
+
+fruits.forEach(display)
+
+function display(fruit){
+    console.log(fruit);
+} */
+
+//.map
+
+/* let numbers=[1,2,3,4,5,6,7,8,9,10];
+answwe=numbers.map(square);
+function square(num){
+    return Math.pow(num,2);
+}
+
+console.log(answwe); */
+
+//.filter method
+
+/* let numbers=[1,2,3,4,5,6,7,8,9,10];
+let evennum=numbers.filter(even);
+let oddnum=numbers.filter(odd);
+
+function even(num){
+    return num % 2===0;
+}
+
+function odd(num){
+    return num % 2!==0;
+}
+
+console.log(oddnum); */
